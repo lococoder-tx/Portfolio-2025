@@ -26,7 +26,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
   };
 
   return (
-    <div className="max-h-full overflow-y-auto p-6 sm:p-8 space-y-8">
+    <div className="max-h-full p-6 sm:p-8 space-y-8">
       <header className="space-y-3">
         <h3 className="text-2xl font-semibold">{project.title}</h3>
         <div className="flex flex-wrap gap-2">

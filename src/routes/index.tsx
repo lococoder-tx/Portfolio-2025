@@ -64,7 +64,7 @@ function Home() {
         </div>
       </nav>
 
-      <main className="container mx-auto">
+      <main className="mx-6 md:mt-3 lg:my-0 lg:mx-auto lg:container">
         <header
           id="intro"
           ref={(el) => {

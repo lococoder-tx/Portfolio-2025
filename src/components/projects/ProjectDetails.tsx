@@ -26,10 +26,28 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
   };
 
   return (
-    <div className="space-y-8">
-      <header className="space-y-2">
+    <div className="max-h-full overflow-y-auto p-6 sm:p-8 space-y-8">
+      <header className="space-y-3">
         <h3 className="text-2xl font-semibold">{project.title}</h3>
-        <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <div className="flex flex-wrap gap-2">
+          {project.href && (
+            <a href={project.href} target="_blank" rel="noreferrer">
+              <Button size="sm" className="cursor-pointer">
+                <ExternalLink className="w-4 h-4" />
+                <span>Visit Project</span>
+              </Button>
+            </a>
+          )}
+          {project.sourceUrl && (
+            <a href={project.sourceUrl} target="_blank" rel="noreferrer">
+              <Button variant="secondary" size="sm" className="cursor-pointer">
+                <Github className="w-4 h-4" />
+                <span>Source Code</span>
+              </Button>
+            </a>
+          )}
+        </div>
+        <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-sm">
           <div className="rounded border p-3">
             <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
               Role
@@ -60,7 +78,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
       <section className="space-y-3">
         <h4 className="text-lg font-medium">Key Features</h4>
-        <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+        <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
           {features.map((f, i) => (
             <li key={i}>{f}</li>
           ))}
@@ -108,25 +126,6 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           </div>
         </div>
       </section>
-
-      <footer className="flex flex-wrap gap-3 pt-2">
-        {project.href && (
-          <a href={project.href} target="_blank" rel="noreferrer">
-            <Button className="cursor-pointer">
-              <ExternalLink className="w-4 h-4" />
-              <span>Visit Project</span>
-            </Button>
-          </a>
-        )}
-        {project.sourceUrl && (
-          <a href={project.sourceUrl} target="_blank" rel="noreferrer">
-            <Button variant="secondary" className="cursor-pointer">
-              <Github className="w-4 h-4" />
-              <span>Source Code</span>
-            </Button>
-          </a>
-        )}
-      </footer>
     </div>
   );
 }

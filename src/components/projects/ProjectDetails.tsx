@@ -100,30 +100,34 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               ))}
             </div>
           </div>
-          <div className="space-y-2 pb-4 border-b border-border last:border-b-0">
-            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
-              Backend
+          {skills.backend ? (
+            <div className="space-y-2 pb-4 border-b border-border last:border-b-0">
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
+                Backend
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {skills.backend.map((s) => (
+                  <span key={s} className="px-2 py-0.5 text-xs border rounded">
+                    {s}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="flex flex-wrap gap-1">
-              {(skills.backend ?? []).map((s) => (
-                <span key={s} className="px-2 py-0.5 text-xs border rounded">
-                  {s}
-                </span>
-              ))}
+          ) : null}
+          {skills.tools ? (
+            <div className="space-y-2 pb-4 border-b border-border last:border-b-0">
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
+                Tools
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {(skills.tools ?? []).map((s) => (
+                  <span key={s} className="px-2 py-0.5 text-xs border rounded">
+                    {s}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="space-y-2 pb-4 border-b border-border last:border-b-0">
-            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">
-              Tools
-            </div>
-            <div className="flex flex-wrap gap-1">
-              {(skills.tools ?? []).map((s) => (
-                <span key={s} className="px-2 py-0.5 text-xs border rounded">
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
+          ) : null}
         </div>
       </section>
     </div>

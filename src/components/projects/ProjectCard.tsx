@@ -50,7 +50,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
               </Button>
             </DialogTrigger>
           </div>
-          <DialogContent className="w-[92vw] max-w-[92vw] sm:max-w-[85vw] lg:max-w-6xl h-[85vh] sm:h-[85vh] lg:h-auto lg:max-h-[80vh] p-0 overflow-y-auto">
+          <DialogContent className="w-[92vw] max-w-[92vw] sm:max-w-[85vw] lg:max-w-6xl h-[85vh] sm:h-[85vh] lg:h-auto lg:max-h-[90vh] p-0 overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="sr-only">{project.title}</DialogTitle>
             </DialogHeader>

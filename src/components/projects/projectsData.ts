@@ -8,8 +8,28 @@ export const projectsData: Array<Project> = [
     description:
       'AI-powered food delivery marketplace that revolutized B2B food delivery in the Austin area. Acquired by Picnic in 2025.',
     imageSrc: '/colorfull.png',
-    href: 'https://app.colorfull.ai/',
+    href: 'https://www.colorfull.ai/',
     duration: '7 months',
+    overview:
+      'Traditional corporate catering often results in stale, one-size-fits-all meals. Colorfull lets every individual order their preferred meal, freshly made and tailored to their liking. Acquired by Picnic in 2025.',
+    features: [
+      'Work with over 40+ restaurants in the Austin + Houston area',
+      'CloudKitchens and Otter Integration',
+      'Custom Menu-based vector search system using Pinecone',
+      'Clerk-based authentication and RBAC',
+      'A lot of other stuff I am missing',
+    ],
+    skills: {
+      frontend: [
+        'React',
+        'TypeScript',
+        'Tailwind',
+        'TanStack Query',
+        'Next.js',
+      ],
+      backend: ['FastAPI', 'Python', 'Firebase'],
+      tools: ['Vercel', 'Docker', 'Google Cloud', 'Clerk', 'Pinecone'],
+    },
   },
   {
     id: 'mycollegeapps',
@@ -19,6 +39,20 @@ export const projectsData: Array<Project> = [
     imageSrc: '/myCollegeApps.png',
     href: 'https://app.mycollegeapps.org/',
     duration: '4 months',
+    overview:
+      'MyCollegeApps is a all-in-one platform that provides comprehensive AI college counseling via personalized AI chatbots and tooling.',
+    features: [
+      'Automated Resume Creation',
+      '3+ personalized AI college counselors',
+      'AI-powered essay analysis for top-tier colleges',
+      'Applcation Tracking System',
+      'Guided College Selection Process',
+    ],
+    skills: {
+      frontend: ['React', 'TypeScript', 'Tailwind', 'TanStack Query'],
+      backend: ['FastAPI', 'Python', 'Supabase'],
+      tools: ['Netlify', 'Docker', 'Google Cloud', 'OpenAI Assistants API'],
+    },
   },
   {
     id: 'solace-cms',
@@ -30,6 +64,14 @@ export const projectsData: Array<Project> = [
     href: 'https://cms-solace.netlify.app/login',
     duration: '1 month',
     sourceUrl: 'https://github.com/lococoder-tx/solace-cms-dashboard',
+    skills: {
+      frontend: ['React', 'Tailwind'],
+      backend: ['Supabase', 'Node.js'],
+      tools: ['Netlify'],
+    },
+    overview:
+      'All-in-one platform for hoteliers to manage their properties, bookings, and guests.',
+    features: ['Property Management', 'Booking Management', 'Guest Management'],
   },
   {
     id: 'cards-demo',
@@ -41,6 +83,11 @@ export const projectsData: Array<Project> = [
     href: 'https://cards-playground.netlify.app/',
     duration: 'N/A',
     sourceUrl: 'https://github.com/lococoder-tx/yugioh-card-motion',
+    overview: 'Pretty cool CSS effects',
+    features: ['Yugioh Cards'],
+    skills: {
+      frontend: ['React', 'Tailwind'],
+    },
   },
   {
     id: 'finvalia',
@@ -51,5 +98,18 @@ export const projectsData: Array<Project> = [
     imageSrc: '/finvalia.png',
     href: 'https://finvalia.ai',
     duration: 'Ongoing',
+    skills: {
+      frontend: ['React', 'Material UI', 'Tanstack Start', 'Tanstack Router'],
+      backend: ['Python', 'Amazon RDS', 'Flask'],
+      tools: ['Docker', 'AWS'],
+    },
+    overview:
+      'AI-driven stock news analytics demo featuring a curated newsfeed and insights.',
+    features: [
+      'Daily curated newsfeed from over 100+ sources',
+      'AI-powered news analysis and insights',
+      'Custom newsfeed filtering and sorting',
+      'User-friendly interface with real-time updates',
+    ],
   },
 ];

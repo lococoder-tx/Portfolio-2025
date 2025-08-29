@@ -42,7 +42,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
 
         {/* Hover overlay + CTA */}
         <Dialog>
-          <div className="absolute inset-0 grid place-items-center bg-gradient-to-t from-black/50 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div className="hidden sm:grid absolute inset-0 place-items-center bg-gradient-to-t from-black/50 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <DialogTrigger asChild>
               <Button variant="default" className="shadow-md cursor-pointer">
                 <ExternalLink className="w-4 h-4" />
@@ -59,8 +59,29 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         </Dialog>
       </div>
 
-      <div className="space-y-2 p-6">
-        <h3 className="text-xl font-medium">{project.title}</h3>
+      <div className="space-y-4 sm:space-y-2 p-6">
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="text-xl font-medium">{project.title}</h3>
+          {/* Mobile view project button - always visible on small screens */}
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant="default"
+                size="sm"
+                className="shadow-md cursor-pointer sm:hidden"
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span>View Project</span>
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="w-[92vw] max-w-[92vw] sm:max-w-[85vw] lg:max-w-6xl h-[85vh] sm:h-[85vh] lg:h-auto lg:max-h-[90vh] p-0 overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle className="sr-only">{project.title}</DialogTitle>
+              </DialogHeader>
+              <ProjectDetails project={project} />
+            </DialogContent>
+          </Dialog>
+        </div>
         <p className="text-sm text-muted-foreground leading-relaxed">
           {project.description}
         </p>

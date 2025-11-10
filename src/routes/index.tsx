@@ -39,12 +39,7 @@ function Home() {
       },
       // Use pixel-based rootMargin (safer on mobile Safari) and multiple thresholds
       {
-        threshold:
-          window.innerWidth > 1920
-            ? [0.4]
-            : window.innerWidth <= 375
-              ? [0.15]
-              : [0.2],
+        threshold: window.innerWidth > 1920 ? [0.4] : [0.1],
         // rootMargin: '0px 0px -20% 0px',
       },
     );

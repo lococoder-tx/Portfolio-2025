@@ -1,6 +1,6 @@
 import { MapPin } from 'lucide-react';
-import Logo2 from '@/components/icons/Logo2';
 import type { PersonalInfo } from '@/types/Personal';
+import Logo2 from '@/components/icons/Logo2';
 
 type ProfileHeaderProps = {
   personalInfo: PersonalInfo;

@@ -1,4 +1,3 @@
-import { Link } from '@tanstack/react-router';
 import type { SocialLink } from '@/types/Social';
 
 type SocialLinksProps = {
@@ -16,9 +15,11 @@ export default function SocialLinks({
 
       <div className="grid grid-cols-2 gap-4">
         {socialLinks.map((social) => (
-          <Link
+          <a
             key={social.id}
-            to={social.url}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
           >
             <div className="space-y-2">
@@ -30,7 +31,7 @@ export default function SocialLinks({
                 {social.handle}
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>

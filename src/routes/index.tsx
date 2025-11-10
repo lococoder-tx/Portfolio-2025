@@ -14,12 +14,7 @@ export const Route = createFileRoute('/')({
 });
 
 function Home() {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-    return false; // fallback for SSR
-  });
+  const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState('');
   const sectionsRef = useRef<Array<HTMLElement | null>>([]);
 
@@ -86,7 +81,7 @@ function Home() {
         </div>
       </nav>
 
-      <main className="mx-6 md:mt-3 lg:my-0 lg:mx-auto lg:container">
+      <main className="mx-6 lg:mx-auto lg:container my-2 md:mt-3 lg:my-0 ">
         <ProfileHeader
           personalInfo={personalData}
           sectionRef={(el) => {

@@ -4,7 +4,7 @@ export const workData: Array<WorkExperience> = [
   {
     id: 'mccormick-2025',
     year: '2025-Present',
-    role: 'Full-Stack Software Engineer (Contract)',
+    role: 'Full-Stack Software Engineer',
     company: 'McCormick & Company',
     description: "Lead McCormick's new AI Development team.",
     tech: [

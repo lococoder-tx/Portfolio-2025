@@ -14,7 +14,12 @@ export const Route = createFileRoute('/')({
 });
 
 function Home() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return false; // fallback for SSR
+  });
   const [activeSection, setActiveSection] = useState('');
   const sectionsRef = useRef<Array<HTMLElement | null>>([]);
 
@@ -34,7 +39,12 @@ function Home() {
       },
       // Use pixel-based rootMargin (safer on mobile Safari) and multiple thresholds
       {
-        threshold: window.innerWidth > 1920 ? [0.4] : [0.15],
+        threshold:
+          window.innerWidth > 1920
+            ? [0.4]
+            : window.innerWidth <= 375
+              ? [0.15]
+              : [0.3],
         // rootMargin: '0px 0px -20% 0px',
       },
     );

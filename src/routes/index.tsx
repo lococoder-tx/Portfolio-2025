@@ -44,7 +44,7 @@ function Home() {
             ? [0.4]
             : window.innerWidth <= 375
               ? [0.15]
-              : [0.3],
+              : [0.2],
         // rootMargin: '0px 0px -20% 0px',
       },
     );

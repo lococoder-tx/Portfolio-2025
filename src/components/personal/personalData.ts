@@ -13,6 +13,6 @@ export const personalData: PersonalInfo = {
   isAvailable: true,
   brand: {
     name: 'Lococoder',
-    year: '2025',
+    year: '2026',
   },
 };

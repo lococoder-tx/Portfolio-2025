@@ -116,7 +116,7 @@ function Home() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
             <div className="space-y-2">
               <div className="text-sm text-muted-foreground">
-                © 2025 Elijah Gaytan. All rights reserved.
+                © 2026 Elijah Gaytan. All rights reserved.
               </div>
               <div className="text-xs text-muted-foreground">
                 Built with React + Tanstack Start

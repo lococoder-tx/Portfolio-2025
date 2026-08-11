@@ -12,7 +12,7 @@ type WorkSectionProps = {
 export default function WorkSection({
   id = 'work',
   title = 'Selected Work',
-  timeRange = '2018 — 2025',
+  timeRange = '2018 — 2026',
   workExperiences,
   sectionRef,
 }: WorkSectionProps) {

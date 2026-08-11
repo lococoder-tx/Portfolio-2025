@@ -2,9 +2,9 @@ import type { WorkExperience } from '@/types/Work';
 
 export const workData: Array<WorkExperience> = [
   {
-    id: 'mccormick-2025',
-    year: '2025-Present',
-    role: 'Full-Stack Software Engineer (Contract)',
+    id: 'mccormick-2026',
+    year: '2026-Present',
+    role: 'Full-Stack Software Engineer',
     company: 'McCormick & Company',
     description: "Lead McCormick's new AI Development team.",
     tech: [

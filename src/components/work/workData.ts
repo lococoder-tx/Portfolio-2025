@@ -59,8 +59,8 @@ export const workData: Array<WorkExperience> = [
       'Full-stack engineer at a venture-backed (8VC, Hustle Fund) office lunch platform serving companies in Austin and Houston. Acquired by Picnic, a CloudKitchens company, in 2025.',
     bullets: [
       'Designed and built a FastAPI budget service for employee meal stipends and moved two Next.js apps onto it.',
-      'Built hybrid dense and sparse vector search over restaurant menus with Pinecone, kept in sync with POS menu updates.',
-      'Sped up order dispatch and payout processing with thread pools, and cut repeat API calls with Redis caching and batched requests.',
+      'Shipped hybrid dense and sparse vector search over restaurant menus with Pinecone, kept in sync with POS menu updates.',
+      'Parallelized order dispatch to restaurant kitchens and restaurant payouts with thread pools, and sped up page loads with Redis caching, React Query tuning and batched API calls.',
       'Added Slack alerts and automated tests for failed Stripe restaurant payouts.',
       'Developed self-service onboarding for corporate clients, automated restaurant financial tracking with CSV exports, and engineered a multi-market operations platform overseeing Austin and Houston logistics.',
       'Built many shared React components in the UI package used by both apps. These include store and location selectors, a delivery-window picker, budget displays, order tables, itemized receipts with modifier pricing, and the redesigned login and menu pages.',

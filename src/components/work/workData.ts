@@ -54,8 +54,9 @@ export const workData: Array<WorkExperience> = [
     id: 'colorfull-2024',
     year: '2024-2025',
     role: 'Software Engineer',
-    company: 'Colorfull - Early-stage B2C catering startup based in Austin, TX',
-    description: 'Acquired by Picnic, a CloudKitchens company, in 2025.',
+    company: 'Colorfull',
+    description:
+      'Full-stack engineer at a venture-backed (8VC, Hustle Fund) office lunch platform serving companies in Austin and Houston. Acquired by Picnic, a CloudKitchens company, in 2025.',
     bullets: [
       'Designed and built a FastAPI budget service for employee meal stipends and moved two Next.js apps onto it.',
       'Built hybrid dense and sparse vector search over restaurant menus with Pinecone, kept in sync with POS menu updates.',
@@ -85,7 +86,7 @@ export const workData: Array<WorkExperience> = [
     role: 'Software Engineer',
     company: 'PNC',
     description:
-      'Promoted within my first year. Continued on the SRE team, building self-service tools that remove manual work for developers across the bank.',
+      'Promoted within the first year on the SRE team, building self-service tools that eliminated manual work for developers across the bank.',
     bullets: [
       'Designed Janus, a backend system using FastAPI, MySQL, and Jinja that automates the creation and submission of ServiceNow Change Requests, eliminating manual paperwork for developers and users.',
       "Built Humio, an Express.js / Vue.js application on the LogSource API that lets teams across the bank query application logs without learning the vendor's query language, saving users tens of hours of onboarding.",
@@ -108,7 +109,7 @@ export const workData: Array<WorkExperience> = [
   {
     id: 'txstate-vr-2018',
     year: '2018-2019',
-    role: 'Software Engineer - Intern',
+    role: 'Software Engineer',
     company: 'Texas State VR Lab, San Marcos, TX',
     description:
       'Designed and implemented a virtual reality training simulation for the city of Austin',

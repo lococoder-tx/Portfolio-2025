@@ -111,8 +111,9 @@ export const workData: Array<WorkExperience> = [
     role: 'Software Engineer - Intern',
     company: 'Texas State VR Lab, San Marcos, TX',
     description:
-      'Designed and implemented a virtual reality training simulation in Unity3D/C# to help train new EMS recruits in Austin, with trainees learning 47% faster than the non-VR group',
+      'Designed and implemented a virtual reality training simulation for the city of Austin',
     bullets: [
+      'Built immersive EMS training scenarios in Unity3D/C# that walk new Austin recruits through real emergency procedures, with trainees learning 47% faster than the non-VR group',
       'Developed a gesture recognition framework for the Oculus Rift SDK that tracks player hand movement',
     ],
     tech: ['Unity3D', 'C#', 'Oculus Rift SDK'],

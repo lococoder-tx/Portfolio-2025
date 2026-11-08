@@ -6,7 +6,7 @@ export const workData: Array<WorkExperience> = [
     year: '2025-Present',
     role: 'Full-Stack Software Engineer',
     company: 'McCormick & Company',
-    description: "Lead McCormick's new AI Development team.",
+    description: 'Leading the future of AI at McCormick.',
     tech: [
       'React',
       'TypeScript',
@@ -29,9 +29,8 @@ export const workData: Array<WorkExperience> = [
     description:
       'Top Rated Plus & Expert Vetted – Upwork (Top 1% of freelancers globally)',
     bullets: [
-      'Developed 10+ custom web applications for startups and SMBs in fintech and education',
-      'Led technical discovery and scoped requirements for MVPs with budgets from $5k to $50k',
-      'Independently own the entire software development lifecycle—from discovery and system design to implementation, deployment, and client training',
+      'Led technical discovery for client MVPs (budgets up to $50K), translating business goals into scoped requirements that shipped on time and within budget',
+      "Act as each client's end-to-end technical partner: designing the architecture, building and deploying the product, and training their team to manage it after launch",
     ],
     tech: [
       'Tanstack Query',
@@ -54,18 +53,16 @@ export const workData: Array<WorkExperience> = [
   {
     id: 'colorfull-2024',
     year: '2024-2025',
-    role: 'Software Engineer (Contract)',
+    role: 'Software Engineer',
     company: 'Colorfull - Early-stage B2C catering startup based in Austin, TX',
-    description:
-      'Collaborated directly with the CEO and CTO to spearhead end-to-end feature development in a fast-paced startup environment',
+    description: 'Acquired by Picnic, a CloudKitchens company, in 2025.',
     bullets: [
-      'Built scalable features using a modern stack: Cursor, Next.js, TypeScript, FastAPI, Firebase, Google Cloud Run and Vercel; integrated with third-party platforms including Stripe and Otter',
-      'Developed a vector search engine using Pinecone to enable semantic and keyword-based food item search, improving user discovery experience',
-      'Introduced Redis-based caching to reduce API response times and enhance system performance',
-      'Designed and implemented a customer feedback system with weekly digest emails to restaurants, closing the loop between user experience and vendor improvement',
-      'Redesigned frontend components to better follow UI/UX design principles and be mobile responsive',
-      'Overhauled UI components for mobile responsiveness and adherence to modern UX best practices using Tailwind, ShadCN, Aceternity and Framer Motion',
-      'Led security efforts by implementing RBAC authentication middleware using Clerk and JWTs, strengthening platform access control',
+      'Designed and built a FastAPI budget service for employee meal stipends and moved two Next.js apps onto it.',
+      'Built hybrid dense and sparse vector search over restaurant menus with Pinecone, kept in sync with POS menu updates.',
+      'Sped up order dispatch and payout processing with thread pools, and cut repeat API calls with Redis caching and batched requests.',
+      'Added Slack alerts and automated tests for failed Stripe restaurant payouts.',
+      'Developed self-service onboarding for corporate clients, automated restaurant financial tracking with CSV exports, and engineered a multi-market operations platform overseeing Austin and Houston logistics.',
+      'Built many shared React components in the UI package used by both apps. These include store and location selectors, a delivery-window picker, budget displays, order tables, itemized receipts with modifier pricing, and the redesigned login and menu pages.',
     ],
     tech: [
       'Next.js',
@@ -88,12 +85,12 @@ export const workData: Array<WorkExperience> = [
     role: 'Software Engineer',
     company: 'PNC',
     description:
-      "Collaborated with PNC's SRE team to design and build internal tooling that automated and accelerated key infrastructure workflows, reducing manual intervention",
+      'Promoted within my first year. Continued on the SRE team, building self-service tools that remove manual work for developers across the bank.',
     bullets: [
-      'Designed and deployed a backend system using FastAPI, MySQL, and Jinja to automate ServiceNow Change Requests, reducing manual work for 30+ developers across the org',
-      'Built the backend for a centralized log query platform using Express.js, MongoDB, and the Humio API, enabling engineers to search logs without vendor-specific syntax—cutting onboarding time by dozens of hours',
-      'Maintained and led backend development for a FastAPI/MySQL application with hundreds of daily users to automate synthetic monitoring in Dynatrace, dramatically simplifying infra observability setup',
-      'Engineered internal tooling for WebSphere/Apache node management using Vue.js (Quasar) and FastAPI; introduced Kafka and Celery-based event-driven architecture for scalable background processing',
+      'Designed Janus, a backend system using FastAPI, MySQL, and Jinja that automates the creation and submission of ServiceNow Change Requests, eliminating manual paperwork for developers and users.',
+      "Built Humio, an Express.js / Vue.js application on the LogSource API that lets teams across the bank query application logs without learning the vendor's query language, saving users tens of hours of onboarding.",
+      'Developed and maintained Monpo, a Python FastAPI and MySQL application, used by hundreds of people daily, that automates synthetic monitoring setup in Dynatrace so teams can self-serve monitoring for their infrastructure.',
+      'Architected Sherlock, a FastAPI and Vue.js / Quasar internal system automating WebSphere and Apache server administration, eliminating half an hour of daily operational overhead per user.',
     ],
     tech: [
       'Python',
@@ -114,9 +111,9 @@ export const workData: Array<WorkExperience> = [
     role: 'Software Engineer - Intern',
     company: 'Texas State VR Lab, San Marcos, TX',
     description:
-      'Designed and implemented a virtual reality training simulation in Unity3D/C# to help train new EMS recruits in Austin, leading to a faster comprehension rate of 47% compared to the non-VR group',
+      'Designed and implemented a virtual reality training simulation in Unity3D/C# to help train new EMS recruits in Austin, with trainees learning 47% faster than the non-VR group',
     bullets: [
-      'Developed an extensive gesture recognition framework for the Oculus Rift SDK that tracks player hand movement',
+      'Developed a gesture recognition framework for the Oculus Rift SDK that tracks player hand movement',
     ],
     tech: ['Unity3D', 'C#', 'Oculus Rift SDK'],
   },
